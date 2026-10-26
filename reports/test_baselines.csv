@@ -1,0 +1,2 @@
+Baseline,Accuracy,Precision,Recall,F1,PR_AUC_random,Brier_constant_prevalence
+Always no purchase,0.9082666666666667,0.0,0.0,0.0,0.09173333333333333,0.08331832888888889

@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:16
+    container_name: senior_ds_postgres
+
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: leads_db
+
+    ports:
+      - "127.0.0.1:5433:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pipeline:
+    build: .
+
+    depends_on:
+      - db
+
+    volumes:
+      - .:/pipeline
+
+volumes:
+  postgres_data:

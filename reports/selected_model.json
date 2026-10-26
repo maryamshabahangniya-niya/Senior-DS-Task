@@ -1,0 +1,56 @@
+{
+    "model_version": "logistic_regression_20261026_131413",
+    "model_name": "Logistic Regression",
+    "config_number": 5,
+    "parameters": {
+        "C": 0.01,
+        "penalty": "l2",
+        "class_weight": null
+    },
+    "selection_metric": "Validation AP within tolerance, then lowest Brier Score",
+    "ap_tolerance": 0.005,
+    "validation_score": 0.2047816389425825,
+    "validation_roc_auc": 0.7129310330114453,
+    "validation_brier_score": 0.0787650022295756,
+    "trained_on_rows": 50000,
+    "feature_columns": [
+        "Product Type",
+        "Channel",
+        "Device",
+        "Partner",
+        "City",
+        "Insurance Company",
+        "Payment Type",
+        "Minutes Since Abandonment",
+        "Days To Policy Expiry",
+        "Price",
+        "Discount Percent",
+        "Has Previous Purchase",
+        "Visited Offer Page",
+        "Sessions Last 7d",
+        "Offer Views Last 7d",
+        "Price Comparisons Last 7d",
+        "Days Since Last Visit",
+        "Created Hour",
+        "Created DayOfWeek"
+    ],
+    "categorical_columns": [
+        "Product Type",
+        "Channel",
+        "Device",
+        "Partner",
+        "City",
+        "Insurance Company",
+        "Payment Type"
+    ],
+    "native_categories": null,
+    "excluded_columns": [
+        "Lead ID",
+        "Created At",
+        "Completed Purchase",
+        "Expected Margin",
+        "Incoming Call Last 24h"
+    ],
+    "model_path": "models/best_model.joblib",
+    "trained_at": "2026-10-26T13:14:13.727267+00:00"
+}
